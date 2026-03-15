@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+src-tauri/target/
+
+# Vite
+.vite/
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Env
+.env
+.env.local
+.env.*.local

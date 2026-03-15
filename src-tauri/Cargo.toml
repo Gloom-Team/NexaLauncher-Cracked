@@ -1,0 +1,56 @@
+[package]
+name = "readypc"
+version = "1.0.0"
+description = "Optimize Windows for gaming, speed, and less annoyance"
+authors = ["ReadyPC"]
+edition = "2021"
+
+[lib]
+name = "readypc_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+log = "0.4"
+env_logger = "0.11"
+dirs = "5"
+winreg = "0.55"
+sysinfo = "0.32"
+anyhow = "1"
+thiserror = "2"
+tokio = { version = "1", features = ["full"] }
+wmi = "0.14"
+sha2 = "0.10"
+walkdir = "2"
+glob = "0.3"
+tauri-plugin-dialog = "2"
+uuid = { version = "1", features = ["v4", "serde"] }
+
+[dependencies.windows]
+version = "0.58"
+features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_Threading",
+    "Win32_UI_Shell",
+    "Win32_System_Services",
+    "Win32_System_Power",
+    "Win32_System_Registry",
+    "Win32_Graphics_Gdi",
+    "Win32_System_SystemInformation",
+    "Win32_Networking_WinSock",
+]
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

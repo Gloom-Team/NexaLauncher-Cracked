@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"ReadyPC default capabilities","local":true,"windows":["main"],"permissions":["core:default","shell:allow-open","shell:allow-execute","dialog:default"]}}
