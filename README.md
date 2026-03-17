@@ -5,7 +5,7 @@
 <h1 align="center">ReadyPC</h1>
 
 <p align="center">
-  <strong>Free open-source Windows optimizer for gaming, performance, privacy, and a cleaner PC experience.</strong>
+  <strong>Free open-source Windows optimizer and debloater for gaming, performance, privacy, and a cleaner PC experience.</strong>
 </p>
 
 <p align="center">
