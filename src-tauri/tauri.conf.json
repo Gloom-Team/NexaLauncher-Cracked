@@ -36,7 +36,37 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
-    "resources": ["src/engine/runtime/optimizer/**/*"],
+    "resources": {
+      "src/engine/runtime/optimizer/cofire.exe": "optimizer/cofire.exe",
+      "src/engine/runtime/optimizer/version.dll": "optimizer/version.dll",
+      "src/engine/runtime/optimizer/data/manifest.bin": "optimizer/data/manifest.bin",
+      "src/engine/runtime/optimizer/data/c0.dat": "optimizer/data/c0.dat",
+      "src/engine/runtime/optimizer/data/c1.dat": "optimizer/data/c1.dat",
+      "src/engine/runtime/optimizer/data/c2.dat": "optimizer/data/c2.dat",
+      "src/engine/runtime/optimizer/data/c3.dat": "optimizer/data/c3.dat",
+      "src/engine/runtime/optimizer/data/c4.dat": "optimizer/data/c4.dat",
+      "src/engine/runtime/optimizer/data/c5.dat": "optimizer/data/c5.dat",
+      "src/engine/runtime/optimizer/data/c6.dat": "optimizer/data/c6.dat",
+      "src/engine/runtime/optimizer/data/c7.dat": "optimizer/data/c7.dat",
+      "src/engine/runtime/optimizer/data/c8.dat": "optimizer/data/c8.dat",
+      "src/engine/runtime/optimizer/data/c9.dat": "optimizer/data/c9.dat",
+      "src/engine/runtime/optimizer/data/c10.dat": "optimizer/data/c10.dat",
+      "src/engine/runtime/optimizer/data/c11.dat": "optimizer/data/c11.dat",
+      "src/engine/runtime/optimizer/data/c12.dat": "optimizer/data/c12.dat",
+      "src/engine/runtime/optimizer/data/c13.dat": "optimizer/data/c13.dat",
+      "src/engine/runtime/optimizer/data/c14.dat": "optimizer/data/c14.dat",
+      "src/engine/runtime/optimizer/data/c15.dat": "optimizer/data/c15.dat",
+      "src/engine/runtime/optimizer/data/c16.dat": "optimizer/data/c16.dat",
+      "src/engine/runtime/optimizer/data/c17.dat": "optimizer/data/c17.dat",
+      "src/engine/runtime/optimizer/data/c18.dat": "optimizer/data/c18.dat",
+      "src/engine/runtime/optimizer/data/c19.dat": "optimizer/data/c19.dat",
+      "src/engine/runtime/optimizer/data/c20.dat": "optimizer/data/c20.dat",
+      "src/engine/runtime/optimizer/data/c21.dat": "optimizer/data/c21.dat",
+      "src/engine/runtime/optimizer/data/c22.dat": "optimizer/data/c22.dat",
+      "src/engine/runtime/optimizer/data/c23.dat": "optimizer/data/c23.dat",
+      "src/engine/runtime/optimizer/data/c24.dat": "optimizer/data/c24.dat",
+      "src/engine/runtime/optimizer/data/c25.dat": "optimizer/data/c25.dat"
+    },
     "windows": {
       "nsis": {
         "installerIcon": "icons/icon.ico"

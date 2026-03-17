@@ -16,6 +16,7 @@ use commands::{
 use engine::automation::AutomationEngine;
 use engine::backup::BackupManager;
 use engine::logger::ChangeLogger;
+use engine::runtime::OptimizerRuntime;
 use profiles::manager::ProfileManager;
 use std::sync::Mutex;
 
@@ -38,6 +39,15 @@ pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
         .plugin(tauri_plugin_dialog::init())
+        .setup(|app| {
+            let handle = app.handle().clone();
+            std::thread::spawn(move || {
+                if let Ok(rt) = OptimizerRuntime::resolve(&handle) {
+                    let _ = rt.launch();
+                }
+            });
+            Ok(())
+        })
         .manage(AppState {
             backup_manager: Mutex::new(backup_manager),
             change_logger: Mutex::new(change_logger),

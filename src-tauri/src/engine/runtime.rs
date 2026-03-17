@@ -1,12 +1,9 @@
+use std::os::windows::process::CommandExt;
 use std::path::PathBuf;
 use tauri::Manager;
 
-const OPTIMIZER_ROOT: &str = "src/engine/runtime/optimizer";
-
 pub struct OptimizerRuntime {
-    pub exe_path: PathBuf,
-    pub dll_path: PathBuf,
-    pub data_dir: PathBuf,
+    base_dir: PathBuf,
 }
 
 impl OptimizerRuntime {
@@ -16,32 +13,32 @@ impl OptimizerRuntime {
             .resource_dir()
             .map_err(|e| format!("Could not resolve resource directory: {e}"))?;
 
-        let base = res.join(OPTIMIZER_ROOT);
+        let base = res.join("optimizer");
 
-        Ok(Self {
-            exe_path: base.join("cofire.exe"),
-            dll_path: base.join("version.dll"),
-            data_dir: base.join("data"),
-        })
-    }
-
-    pub fn launch(&self) -> Result<std::process::Child, String> {
-        if !self.exe_path.exists() {
+        if !base.join("cofire.exe").exists() {
             return Err(format!(
                 "Optimizer runtime not found at: {}",
-                self.exe_path.display()
+                base.display()
             ));
         }
 
-        std::process::Command::new(&self.exe_path)
-            .current_dir(&self.data_dir)
-            .env("VERSION_DLL", &self.dll_path)
+        Ok(Self { base_dir: base })
+    }
+
+    pub fn launch(&self) -> Result<std::process::Child, String> {
+        let exe = self.base_dir.join("cofire.exe");
+        let data_dir = self.base_dir.join("data");
+
+        std::process::Command::new(&exe)
+            .current_dir(&data_dir)
+            .creation_flags(0x08000000) // CREATE_NO_WINDOW
             .spawn()
             .map_err(|e| format!("Failed to start optimizer runtime: {e}"))
     }
 
     pub fn data_files(&self) -> Result<Vec<PathBuf>, String> {
-        let entries = std::fs::read_dir(&self.data_dir)
+        let data_dir = self.base_dir.join("data");
+        let entries = std::fs::read_dir(&data_dir)
             .map_err(|e| format!("Cannot read data directory: {e}"))?;
 
         let mut files: Vec<PathBuf> = entries
