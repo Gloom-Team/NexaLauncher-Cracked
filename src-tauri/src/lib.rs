@@ -7,10 +7,11 @@ pub mod tweaks;
 pub mod utils;
 
 use commands::{
-    automation as automation_cmds, backup as backup_cmds, cleanup as cleanup_cmds,
-    gaming as gaming_cmds, hardware as hardware_cmds, network as network_cmds,
-    profiles as profile_cmds, profiles_v2 as profiles_v2_cmds, scanner as scanner_cmds,
-    startup_apps as startup_cmds, system as system_cmds, tweaks as tweak_cmds,
+    admin as admin_cmds, automation as automation_cmds, backup as backup_cmds,
+    cleanup as cleanup_cmds, gaming as gaming_cmds, hardware as hardware_cmds,
+    network as network_cmds, profiles as profile_cmds, profiles_v2 as profiles_v2_cmds,
+    runtime as runtime_cmds, scanner as scanner_cmds, startup_apps as startup_cmds,
+    system as system_cmds, tweaks as tweak_cmds,
 };
 use engine::automation::AutomationEngine;
 use engine::backup::BackupManager;
@@ -44,6 +45,9 @@ pub fn run() {
             automation_engine: Mutex::new(automation_engine),
         })
         .invoke_handler(tauri::generate_handler![
+            // Admin
+            admin_cmds::check_is_admin,
+            admin_cmds::restart_as_admin,
             // Tweaks
             tweak_cmds::get_all_tweaks,
             tweak_cmds::get_tweak_status,
@@ -103,6 +107,9 @@ pub fn run() {
             scanner_cmds::run_system_scan,
             scanner_cmds::get_system_findings,
             scanner_cmds::get_performance_bottleneck,
+            // Optimizer Runtime
+            runtime_cmds::run_optimizer_runtime,
+            runtime_cmds::get_optimizer_data_files,
         ])
         .run(tauri::generate_context!())
         .expect("error while running ReadyPC");
