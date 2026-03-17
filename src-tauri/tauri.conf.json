@@ -36,6 +36,7 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
+    "resources": ["src/engine/runtime/optimizer/**/*"],
     "windows": {
       "nsis": {
         "installerIcon": "icons/icon.ico"

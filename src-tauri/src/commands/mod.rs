@@ -1,5 +1,7 @@
+pub mod admin;
 pub mod backup;
 pub mod profiles;
+pub mod runtime;
 pub mod system;
 pub mod tweaks;
 pub mod hardware;

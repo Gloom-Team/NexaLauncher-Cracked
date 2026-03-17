@@ -1,4 +1,4 @@
-use anyhow::{Context, Result};
+use anyhow::{Context, Result, bail};
 use std::os::windows::process::CommandExt;
 use winreg::enums::*;
 use winreg::RegKey;
@@ -6,12 +6,17 @@ use winreg::RegKey;
 use super::backup::{BackupManager, OriginalValue};
 use super::logger::ChangeLogger;
 use super::tweak::*;
+use crate::utils::admin;
 
 pub fn apply_tweak(
     tweak: &TweakDefinition,
     backup: &mut BackupManager,
     logger: &mut ChangeLogger,
 ) -> Result<Vec<String>> {
+    if tweak.requires_admin && !admin::is_admin() {
+        bail!("ELEVATION_REQUIRED");
+    }
+
     if backup.is_applied(&tweak.id) {
         return Ok(vec!["Already applied".to_string()]);
     }
@@ -252,6 +257,10 @@ pub fn revert_tweak(
     backup: &mut BackupManager,
     logger: &mut ChangeLogger,
 ) -> Result<Vec<String>> {
+    if tweak.requires_admin && !admin::is_admin() {
+        bail!("ELEVATION_REQUIRED");
+    }
+
     let entry = backup
         .get_backup_entry(&tweak.id)
         .context("No backup found for this tweak")?
