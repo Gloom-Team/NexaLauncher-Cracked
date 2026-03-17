@@ -5,11 +5,16 @@
 <h1 align="center">ReadyPC</h1>
 
 <p align="center">
-  <strong>Free open-source Windows optimizer for gaming, performance, privacy, and fewer annoyances.</strong>
+  <strong>Free open-source Windows optimizer for gaming, performance, privacy, and a cleaner PC experience.</strong>
 </p>
 
 <p align="center">
-  Built with Rust, Tauri, React, and TypeScript for a fast, lightweight desktop experience.
+  ReadyPC helps you optimize Windows, reduce background bloat, improve responsiveness, and apply safe reversible tweaks in a fast lightweight desktop app.
+</p>
+
+<p align="center">
+  <a href="https://github.com/Gloom-Team/ReadyPC/releases/latest"><img src="https://img.shields.io/badge/Download-Latest_Release-2ea44f?style=for-the-badge" alt="Download ReadyPC"></a>
+  <a href="https://github.com/Gloom-Team/ReadyPC/releases/latest"><img src="https://img.shields.io/github/downloads/Gloom-Team/ReadyPC/total?style=for-the-badge&label=Total%20Downloads" alt="ReadyPC downloads"></a>
 </p>
 
 <p align="center">
@@ -17,89 +22,127 @@
   <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Rust-1.70%2B-orange.svg" alt="Rust 1.70+"></a>
   <a href="https://tauri.app/"><img src="https://img.shields.io/badge/Tauri-v2-24C8DB.svg" alt="Tauri v2"></a>
   <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18-61DAFB.svg" alt="React 18"></a>
+  <a href="https://github.com/Gloom-Team/ReadyPC/stargazers"><img src="https://img.shields.io/github/stars/Gloom-Team/ReadyPC?style=social" alt="ReadyPC GitHub stars"></a>
 </p>
 
 <p align="center">
-  <a href="#download">Download</a> •
-  <a href="#features">Features</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#how-it-works">How It Works</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#contributing">Contributing</a>
+  <a href="https://github.com/Gloom-Team/ReadyPC/releases/latest"><strong>Download ReadyPC</strong></a> •
+  <a href="#why-download-readypc"><strong>Why Download</strong></a> •
+  <a href="#features"><strong>Features</strong></a> •
+  <a href="#installation"><strong>Build from Source</strong></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Gloom-Team/ReadyPC/releases/latest">
+    <img src="mockup.png" width="950" alt="ReadyPC laptop app mockup">
+  </a>
 </p>
 
 ---
 
+## Download ReadyPC
 
-## Download
+**Download the latest version here:**
 
-Get the latest build from the **Releases** page:
+## **[⬇ Download ReadyPC for Windows](https://github.com/Gloom-Team/ReadyPC/releases/latest)**
 
-**[Download ReadyPC from Releases](https://github.com/Gloom-Team/NexaLauncher-Cracked/releases/tag/Releases)**
+ReadyPC is a free open-source **Windows optimizer** built for people who want better gaming performance, fewer background annoyances, stronger privacy, and a cleaner Windows setup without shady one-click tools.
 
-If you are building from source, follow the installation steps below.
+If you want the fastest way to get started, go straight to the latest release and download ReadyPC now.
 
 ---
-## ReadyPC: Open-Source Windows Optimizer
 
-**ReadyPC** is a free, open-source **Windows optimizer** designed to improve **gaming performance**, system responsiveness, privacy, and everyday usability without fake promises or risky “magic boost” claims.
+## ReadyPC | Free Open-Source Windows Optimizer for Gaming and Performance
 
-Instead of sketchy one-click cleaners or undocumented registry hacks, ReadyPC gives you **safe, reversible Windows tweaks** with plain-English explanations, backups before every change, and a full local change log.
+**ReadyPC** is a free open-source **PC optimizer** and **Windows optimization tool** designed to help improve **gaming performance**, system responsiveness, privacy, and everyday usability.
 
-Whether you want a better setup for gaming, a cleaner Windows experience, or less background bloat, ReadyPC helps you optimize Windows while staying in control.
+Unlike sketchy cleaners and fake booster apps, ReadyPC focuses on **safe, reversible Windows tweaks** with clear explanations, local backups, and a full change log so you always know what changed.
 
-### Why ReadyPC?
+ReadyPC is built for users searching for:
 
-- **Safe and reversible** — every tweak can be undone
-- **Transparent** — clear explanations, risk levels, and expected impact
-- **Private** — everything stays on your PC
-- **Lightweight** — built with Rust + Tauri, not Electron
-- **Practical** — focused on real Windows optimization, not hype
+- Windows optimizer
+- PC optimizer
+- gaming optimizer
+- Windows debloat tool
+- performance tweak tool
+- privacy tweak app
+- lightweight Windows utility
+
+Everything runs locally on your PC. No account. No nonsense. No fake promises.
+
+---
+
+## Why Download ReadyPC
+
+People download ReadyPC because it makes Windows optimization easier to understand and safer to use.
+
+- **Fast to use**  
+  Apply useful Windows tweaks in seconds
+
+- **Safe and reversible**  
+  Every tweak can be undone
+
+- **Clear and transparent**  
+  See what each tweak does, why it helps, and how risky it is
+
+- **Built for gaming and speed**  
+  Reduce background overhead and improve responsiveness
+
+- **Privacy focused**  
+  Cut down telemetry, ads, nags, and unnecessary Windows clutter
+
+- **Lightweight desktop app**  
+  Built with Rust and Tauri for speed and efficiency
+
+- **Free and open-source**  
+  Download it, inspect it, and use it without lock-in
+
+## **[Download ReadyPC Now](https://github.com/Gloom-Team/ReadyPC/releases/latest)**
 
 ---
 
 ## Features
 
-## One-Click Optimization Profiles
+### One-Click Optimization Profiles
 
-ReadyPC includes one-click profiles for different use cases, so you can apply a curated set of Windows optimizations in seconds.
+ReadyPC includes one-click profiles so users can download the app and start optimizing Windows right away.
 
-| Profile | Best For | Included Optimizations |
+| Profile | Best For | What It Helps With |
 |---|---|---|
-| **Gaming Mode** | Competitive gaming, lower background overhead, streaming setups | Disables overlays, Game Bar, background apps, and applies high-performance power settings |
-| **Performance Mode** | Everyday speed and responsiveness | Includes gaming tweaks plus service optimization, temp cleanup, and startup reduction |
-| **Quiet / Focus Mode** | Work, school, and fewer interruptions | Reduces notifications, nags, ads, telemetry, and distractions |
-| **Low-End PC Mode** | Budget hardware and older systems | Aggressive visual and background-service trimming for better responsiveness |
+| **Gaming Mode** | Competitive play, streaming, lower background usage | Reduces overlays, background apps, Game Bar clutter, and unnecessary overhead |
+| **Performance Mode** | Everyday speed and smoother system response | Improves responsiveness with useful performance and cleanup tweaks |
+| **Quiet / Focus Mode** | Work, school, fewer distractions | Cuts notifications, nags, ads, and interruptions |
+| **Low-End PC Mode** | Older hardware and budget systems | Trims visual overhead and background activity for a snappier feel |
 
-## Safe Tweak Engine
+### Safe Tweak Engine
 
-Every tweak in ReadyPC explains:
+Every tweak explains:
 
-- **What it does**
-- **Why it may help**
-- **Risk level**
-- **Estimated impact**
-- **Whether it is fully reversible**
+- What it does
+- Why it may help
+- Risk level
+- Expected impact
+- Whether it can be reversed
 
-That means no mystery buttons and no unexplained changes.
+That means no mystery buttons and no undocumented changes.
 
-## 45+ Windows Tweaks Across 7 Categories
+### 45+ Windows Tweaks Across 7 Categories
 
-ReadyPC includes a growing set of Windows performance, gaming, privacy, and cleanup tweaks.
+ReadyPC includes a growing library of Windows tweaks for gaming, performance, cleanup, and privacy.
 
 | Category | Count | Examples |
 |---|---:|---|
 | **Gaming** | 8 | Game Bar, Game DVR, HAGS, mouse acceleration, Nagle's algorithm |
-| **Annoyance Removal** | 15 | Tips, nags, web search, Widgets, Copilot, Sticky Keys, ads, telemetry |
+| **Annoyance Removal** | 15 | Tips, nags, Widgets, Copilot, Sticky Keys, ads, telemetry |
 | **Performance** | 10 | Background apps, SysMain, search indexing, processor scheduling |
 | **Visual Effects** | 6 | Transparency, animations, shadows, Aero Peek |
 | **Startup** | 1 | Startup delay removal |
 | **Cleanup** | 2 | Temp files, prefetch cache |
 | **Power** | 2 | High Performance, Ultimate Performance |
 
-## Benchmark-Lite Snapshots
+### Benchmark-Lite Snapshots
 
-Measure before-and-after changes with quick system snapshots, including:
+See before-and-after changes with quick system snapshots that include:
 
 - Startup app count
 - Idle RAM usage
@@ -108,11 +151,9 @@ Measure before-and-after changes with quick system snapshots, including:
 - Power plan detection
 - Side-by-side comparison
 
-## Full Change Log and Undo
+### Full Change Log and Undo
 
-ReadyPC logs every applied change with timestamps and stores everything locally.
-
-You can:
+ReadyPC logs every applied tweak locally with timestamps so you can stay in control.
 
 - Undo individual tweaks
 - Revert all applied changes
@@ -121,26 +162,39 @@ You can:
 
 ---
 
+## Why ReadyPC Stands Out
+
+Most Windows optimizer apps sell hype.
+
+ReadyPC focuses on clarity, safety, and control.
+
+- No fake boost claims
+- No mystery tweaks
+- No forced accounts
+- No bloated Electron shell
+- No hidden background services
+
+Just a clean downloadable Windows optimizer built to help real users improve their PCs.
+
+## **[Download the Latest ReadyPC Release](https://github.com/Gloom-Team/ReadyPC/releases/latest)**
+
+---
+
 ## Installation
 
-## Download a Release
+## Download the App
 
-For most users, the easiest way to get started is to download the latest version from the **Releases** page:
+For most users, the best option is to download the latest release:
 
-**[Latest Releases](https://github.com/Gloom-Team/NexaLauncher-Cracked/releases/tag/Releases)**
+## **[⬇ Download ReadyPC](https://github.com/Gloom-Team/ReadyPC/releases/latest)**
+
+---
 
 ## Build from Source
 
 ```bash
-# Clone the repository
-git clone https://github.com/Gloom-Team/NexaLauncher-Cracked.git
-cd NexaLauncher-Cracked
-
-# Install dependencies
+git clone https://github.com/Gloom-Team/ReadyPC.git
+cd ReadyPC
 pnpm install
-
-# Start in development mode
 pnpm tauri dev
-
-# Build for production
 pnpm tauri build
